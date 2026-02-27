@@ -1,0 +1,163 @@
+\documentclass[a4paper]{exam}
+
+\usepackage{amsmath,amssymb, amsthm}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{titling}
+
+
+
+% Header and footer.
+\pagestyle{headandfoot}
+\runningheadrule
+\runningfootrule
+\runningheader{CS/MATH 113, SPRING 2026}{Pset 06: Proofs, Sets and Functions}{\theauthor}
+\runningfooter{}{Page \thepage\ of \numpages}{}
+\firstpageheader{}{}{}
+
+% \printanswers %Uncomment this line
+
+\title{Problem Set 06: Proofs, Sets and Functions}
+\author{Blingblong} % <=== replace with your student ID, e.g. xy012345
+\date{CS/MATH 113 Discrete Mathematics\\Habib University\\Spring 2026}
+
+\boxedpoints
+
+\begin{document}
+\maketitle
+
+\section*{Problems}
+
+\begin{questions}
+
+    \question Prove or disprove the following claim: there exists irrational numbers $a$ and $b$ such that $a^b$ is rational.
+    \begin{solution}
+        % Enter solution here 
+    \end{solution}
+
+    \question Show that there are infinitely many primes, in other words the set containing all prime numbers is infinite.
+    \begin{solution}
+        % Enter solution here 
+    \end{solution}
+
+    \question Show that $\emptyset$, $\{\emptyset\}$, $\{\{\emptyset\}\}$, and $\{\emptyset, \{\emptyset\}\}$ are all different sets.
+    \begin{solution}
+        % Enter solution here        
+    \end{solution}
+
+    \question Among the set identities you have studied are the Absorption laws (see page 136 of book). Prove that these identities hold, i.e.
+    \begin{parts}
+        \part $A \cup ( A \cap B) = A$
+        \begin{solution}
+            % Enter solution here
+        \end{solution}
+
+        \part $A \cap ( A \cup B) = A$
+        \begin{solution}
+            % Enter solution here
+        \end{solution}
+    \end{parts}
+
+    \question Let $A$ and $B$ be subsets of a universal set $U$. 
+    \begin{parts}
+        \part Show that $A \subseteq B$ if and only if $\overline{B} \subseteq \overline{A}$.
+        \begin{solution}
+            % Enter solution here
+        \end{solution} 
+
+        \part Show that for all sets $A$ and $B$, $(A \cap B) \cup (A \cap \overline{B}) = A$.
+        \begin{solution}
+            % Enter solution here
+        \end{solution} 
+    \end{parts}
+
+    \question Let $A$ and $B$ be some sets. Show that $\mathcal{P}(A) \subseteq \mathcal{P}(B) \iff A \subseteq B$.
+    \begin{solution}
+        % Enter solution here
+    \end{solution}
+
+    \question Let $A$, $B$, $C$, and $D$ be some nonempty sets. Show that $A \times B \subseteq C \times D \iff A \subseteq C \text{ and } B \subseteq D$. Furthermore, show that $ A \times B = C \times D \iff A = C \text{ and } B = D$. \\ 
+    What happens if the restriction about them being nonempty sets is removed? Does the result still hold?
+    \begin{solution}
+        % Enter solution here
+    \end{solution}
+
+
+    \question The symmetric difference of $A$ and $B$, denoted by $A \oplus B$, is the set containing those elements in either $A$ or $B$, but not in both $A$ and $B$. \\
+    \begin{parts}
+        \part Define $A \oplus B$ in terms of elementary set operations that we have studied in class.
+        \begin{solution}
+            % Enter solution here
+        \end{solution} 
+
+        \part Let $A$, $B$, and $C$ be some sets. Prove or disprove the following: If $A \oplus C = B \oplus C$ then $A = B$.
+        \begin{solution}
+            % Enter solution here
+        \end{solution} 
+    \end{parts}
+
+
+    \question Let $S$ be the set that contains a set $x$ if the set $x$ does not belong to itself, so that $S = \{\, x \mid x \notin x \,\}$. 
+    \begin{parts}
+        \part Show the assumption that $S$ is a member of $S$ leads to a contradiction.
+        \begin{solution}
+            % Enter solution here
+        \end{solution}
+
+        \part Show the assumption that $S$ is not a member of $S$ leads to a contradiction.
+        \begin{solution}
+            % Enter solution here
+        \end{solution}
+        
+        \part By parts (a) and (b) it follows that the set S cannot be defined as it was. What you have just shown is called the \textbf{Russell's paradox}. There are various ways modern set theories avoid this paradox. 
+
+        How do you think this paradox is avoided in modern set theory? Suggest an axiom we can add in set theory to avoid this paradox.
+        \begin{solution}
+            % Enter solution here
+        \end{solution}
+    \end{parts}
+    
+    
+    
+    
+    
+
+    \question Let $X$, $Y$, $Z$ be some sets and let $f: X \to Y$, $f': X \to Y$, $g: Y \to Z$, and $g': Y \to Z$ be functions.
+    \begin{parts}
+        \part Show that if $g \circ f$ is injective, then $f$ must be injective. Is it true that $g$ must also be injective? 
+        \begin{solution}
+            % Enter solution here
+        \end{solution}
+
+        \part Show that if $g \circ f$ is surjective, then $g$ must be surjective. Is it true that $f$ must also be surjective?
+        \begin{solution}
+            % Enter solution here
+        \end{solution}
+
+        \part Show that if $g \circ f = g \circ f'$ and $g$ is an injection then $f = f'$.
+        \begin{solution}
+            % Enter solution here
+        \end{solution}
+
+        \part Show that if $g' \circ f = g \circ f$ and $f$ is a surjection then $g = g'$.
+        \begin{solution}
+            % Enter solution here
+        \end{solution}
+
+        \part Show that if $f$ and $g$ are bijective, then so is $g \circ f$, and we have $(g \circ f)^{-1} = f^{-1} \circ g^{-1}$.
+        \begin{solution}
+            % Enter solution here
+        \end{solution}
+
+    \end{parts}
+
+    
+      
+\end{questions}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
